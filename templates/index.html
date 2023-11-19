@@ -1,7 +1,54 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
-    <h1>hola mundo</h1>
+    <div class="container">
+        <div class="card">
+            <div class="imgBox">
+                <img src="{% static 'img/iphone_14_PNG13.png' %}">
+            </div>
+            <div class="containerBox">
+                <h2>iPhone 15</h2>
+                <h3>Blue titanium</h3>
+                <h5>512GB</h5>
+            </div>
+            <div class="buy">
+                <p>$1099</p>
+                <a href="#">Bun Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBox">
+                <img src="{% static 'img/iphone_14_PNG13.png' %}">
+            </div>
+            <div class="containerBox">
+                <h2>iPhone 15</h2>
+                <h3>Blue titanium</h3>
+                <h3>512GB</h3>
+            </div>
+            <div class="buy">
+                <p>$1099</p>
+                <a href="#">Bun Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBox">
+                <img src="{% static 'img/iphone_14_PNG13.png' %}">
+            </div>
+            <div class="containerBox">
+                <h2>iPhone 15</h2>
+                <h3>Blue titanium</h3>
+                <h3>512GB</h3>
+            </div>
+            <div class="buy">
+                <p>$1099</p>
+                <a href="#">Bun Now</a>
+            </div>
+        </div>
+
+    </div>
 
 {% endblock %}

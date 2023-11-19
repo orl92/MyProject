@@ -5,16 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}">
+    {% block head %}
 
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-
-    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
 </head>
 <body>
+<video src="{% static '' %}video/background.mp4" autoplay loop muted></video>
+<header>
+    {% include 'navbar.html' %}
+</header>
 
-{% block content %}
+<main>
+    {% block content %}
 
-{% endblock %}
+    {% endblock %}
+</main>
+
+<footer>
+    {% include 'footer.html' %}
+</footer>
 
 {% block script %}
 
